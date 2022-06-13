@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_e9ec3772_566a_4654_835d_1f14e16f504f_Output_Payload = {| message: String |}
+
