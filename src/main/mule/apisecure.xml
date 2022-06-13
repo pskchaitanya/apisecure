@@ -17,5 +17,6 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
 	<flow name="apisecureFlow" doc:id="6f352d4b-6bd4-4bc8-a120-c455bb7d04a1" >
 		<http:listener doc:name="Listener" doc:id="7b86ecfc-6df6-4563-815d-951e725a68cb" path="/show" config-ref="HTTP_Listener_config"/>
 		<flow-ref doc:name="Flow Reference" doc:id="2ad75e9d-156b-4f0e-b461-2566863d90ef" name="processlayerFlow"/>
+		<logger level="INFO" doc:name="Logger" doc:id="ecb51e8f-4ee9-4437-8954-53c8f12b3b1e" message="#[payload]"/>
 	</flow>
 </mule>
